@@ -1,0 +1,12 @@
+name: Trigger Webhook
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  dummy-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
